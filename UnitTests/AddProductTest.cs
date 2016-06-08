@@ -19,7 +19,7 @@
                 var mockProduct = new Product
                                       {
                                           ProductName = "test product 1",
-                                          Category = new Category(),
+                                          CategoryID = -3,
                                           UnitPrice = 1.0,
                                           ImagePath = "fakepath",
                                           Description = "Test product. Test!"
@@ -30,21 +30,27 @@
                     mockProduct.ProductName,
                     mockProduct.Description,
                     mockProduct.UnitPrice.ToString(),
-                    "",
-                    mockProduct.ImagePath);
+                    mockProduct.CategoryID.ToString(),
+                    "");
                 if (addSuccess)
                 {
                     Debug.WriteLine("Тест добавления продукта успешен.");
                 }
                 else
                 {
-                    Debug.WriteLine("Тест добавления продукта не успешен");
+                    throw new InternalTestFailureException("Тест добавления продукта не успешен");
                 }
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(string.Format("Во вермя выполнения теста произошла ошибка {0}", ex.Message));
+                throw new InternalTestFailureException(string.Format("Во вермя выполнения теста произошла ошибка {0}", ex.Message));
             }
+        }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
+           ExceptionUtility.LogException(new InvalidCastException(),"Test of exception logging" );
         }
     }
 }

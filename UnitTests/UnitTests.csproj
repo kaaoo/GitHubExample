@@ -42,9 +42,6 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="WingtipToys">
-      <HintPath>..\WingtipToys\bin\WingtipToys.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -61,6 +58,12 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AddProductTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WingtipToys\WingtipToys.csproj">
+      <Project>{3F8458A7-02DD-4B8C-B4E0-F6132D51ADDD}</Project>
+      <Name>WingtipToys</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
