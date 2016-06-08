@@ -2,8 +2,9 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
         <h1><%: Title %>.</h1>
-        <h2>Wingtip Toys can help you find the perfect gift.</h2>
-        <p class="lead">We're all about transportation toys. You can order 
-                any of our toys today. Each toy listing has detailed 
-                information to help you choose the right toy.</p>
+        <h2>Высшая школа  информационных технологий и информационных систем (ИТИС)</h2>
+        <p class="lead">Высшая школа  информационных технологий и информационных систем (ИТИС) -  
+            инновационный ИТ-факультет КФУ, который был основан в 2011 году совместными усилиями 
+            Министерства информатизации и связи РТ, Казанского федерального университета, мировых брендов 
+            IBM, Microsoft, HP, Oracle, представителями крупнейших IT-компаний региона.</p>
 </asp:Content>

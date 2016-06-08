@@ -103,7 +103,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Wingtip Toys</p>
+                <p>&copy; <%: DateTime.Now.Year %> - ИТИС рулит</p>
             </footer>
         </div>
     </form>
